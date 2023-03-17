@@ -1,0 +1,12 @@
+type TodoApp @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  userId: String!
+  assets: String!
+  buy: Boolean
+  quantity: Float!
+  price: Float!
+  date: AWSDate!
+  notes: String
+  spend: Float!
+}
+ 

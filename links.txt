@@ -1,0 +1,11 @@
+profile
+https://query1.finance.yahoo.com/v7/finance/quote?formatted=true&lang=en-US&region=US&symbols=VALE3.SA&fields=longName%2CshortName%2CregularMarketPrice%2CregularMarketChange%2CregularMarketChangePercent%2CmessageBoardId%2CmarketCap%2CunderlyingSymbol%2CunderlyingExchangeSymbol%2CheadSymbolAsString%2CregularMarketVolume%2Cuuid%2CregularMarketOpen%2CfiftyTwoWeekLow%2CfiftyTwoWeekHigh%2CtoCurrency%2CfromCurrency%2CtoExchange%2CfromExchange%2CcorporateActions
+
+
+https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved?formatted=false&lang=pt-BR&region=BR&scrIds=day_gainers_br&count=5&enableSectorIndustryLabelFix=true&corsDomain=br.financas.yahoo.com
+
+https://query1.finance.yahoo.com/v1/finance/screener/predefined/saved?formatted=false&lang=pt-BR&region=BR&scrIds=day_losers_br&count=5&enableSectorIndustryLabelFix=true&corsDomain=br.financas.yahoo.com
+
+https://finance.yahoo.com/screener/81af6a57-d24a-432c-8f0a-2b9cc83dbdc4
+
+https://query1.finance.yahoo.com/v1/finance/screener/81af6a57-d24a-432c-8f0a-2b9cc83dbdc4
