@@ -117,7 +117,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
         backgroundColor: const Color(0xFF1A152A),
         title: Text(
           widget.symbol,
-          style: const TextStyle(fontFamily: 'Matterhorn'),
+          style: const TextStyle(fontFamily: 'Open Sans'),
         ),
       ),
       body: ListView(
@@ -151,7 +151,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                           style: const TextStyle(
                             fontWeight: FontWeight.w600,
                             fontSize: 28,
-                            fontFamily: 'Matterhorn',
+                            fontFamily: 'Open Sans',
                           ),
                         ),
                         Text(
@@ -159,7 +159,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 12,
-                              fontFamily: 'Matterhorn',
+                              fontFamily: 'Open Sans',
                               color: snapshot.data![0]
                                           .regularMarketChangePercent.raw >=
                                       0
@@ -171,7 +171,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                           style: const TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 14,
-                            fontFamily: 'Matterhorn',
+                            fontFamily: 'Open Sans',
                           ),
                         ),
                       ],
@@ -262,7 +262,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
@@ -270,7 +270,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -283,7 +283,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
@@ -291,7 +291,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -304,7 +304,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
@@ -312,7 +312,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -325,7 +325,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
@@ -333,7 +333,7 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -342,19 +342,19 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            "Day's Range",
+                            "Volumn",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
-                            snapshot.data![0].regularMarketDayRange.fmt,
+                            snapshot.data![0].regularMarketVolume.fmt,
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
-                                fontSize: 22,
-                                fontFamily: 'Matterhorn',
+                                fontSize: 18,
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -363,19 +363,19 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            "Day's Range",
+                            "Market Cap",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
-                            snapshot.data![0].regularMarketDayRange.fmt,
+                            snapshot.data![0].marketCap!.fmt,
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
-                                fontSize: 22,
-                                fontFamily: 'Matterhorn',
+                                fontSize: 18,
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -384,19 +384,19 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            "Day's Range",
+                            "52wk High Change",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
-                            snapshot.data![0].regularMarketDayRange.fmt,
+                            snapshot.data![0].fiftyTwoWeekHighChangePercent.fmt,
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
-                                fontSize: 22,
-                                fontFamily: 'Matterhorn',
+                                fontSize: 18,
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -405,19 +405,19 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            "Day's Range",
+                            "52wk Low Change",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 18,
-                                fontFamily: 'Matterhorn',
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                           Text(
-                            snapshot.data![0].regularMarketDayRange.fmt,
+                            snapshot.data![0].fiftyTwoWeekLowChangePercent!.fmt,
                             style: const TextStyle(
                                 fontWeight: FontWeight.w500,
-                                fontSize: 22,
-                                fontFamily: 'Matterhorn',
+                                fontSize: 18,
+                                fontFamily: 'Open Sans',
                                 color: Color(0xFF7B788A)),
                           ),
                         ],
@@ -459,9 +459,9 @@ class _ChartsStocksPageState extends State<ChartsStocksPage> {
       child: Text(label,
           style: isSelected
               ? const TextStyle(
-                  color: Color(0xFFFFFFFF), fontFamily: 'Matterhorn')
+                  color: Color(0xFFFFFFFF), fontFamily: 'Open Sans')
               : const TextStyle(
-                  color: Color(0xFF7B788A), fontFamily: 'Matterhorn')),
+                  color: Color(0xFF7B788A), fontFamily: 'Open Sans')),
     );
   }
 }
